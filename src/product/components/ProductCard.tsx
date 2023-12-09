@@ -22,7 +22,7 @@ const ProductCard = ({
   imgLink,
 }: ProductCardProps): ReactElement => {
   return (
-    <Card maxW='sm'>
+    <Card maxW='sm' variant='filled'>
       <CardBody>
         <Image
           src={imgLink}
