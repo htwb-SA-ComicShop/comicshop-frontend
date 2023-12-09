@@ -1,6 +1,6 @@
 import { Flex, Link, Stack, Text } from '@chakra-ui/react';
 import { ReactElement } from 'react';
-import { NavItem } from '../../types';
+import { NavItem } from '../types';
 
 export const MobileNav = ({ items }: { items: NavItem[] }): ReactElement => {
   return (

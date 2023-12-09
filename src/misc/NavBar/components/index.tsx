@@ -18,7 +18,7 @@ import {
 } from 'react-icons/md';
 import { DesktopNav } from './DesktopNav';
 import { MobileNav } from './MobileNav';
-import { NavItem } from '../../types';
+import { NavItem } from '../types';
 
 export default function NavBar(): ReactElement {
   const { isOpen, onToggle } = useDisclosure();

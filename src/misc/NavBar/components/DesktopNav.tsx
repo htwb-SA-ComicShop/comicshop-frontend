@@ -1,4 +1,4 @@
-import { NavItem } from '../../types';
+import { NavItem } from '../types';
 import { Box, Link, Stack } from '@chakra-ui/react';
 import { ReactElement } from 'react';
 
