@@ -10,29 +10,30 @@ import {
   Text,
 } from '@chakra-ui/react';
 import { ReactElement } from 'react';
-import { ProductCardProps } from '../types';
+import { Comic } from '../types';
 
 const ProductCard = ({
-  title,
-  authors,
+  name,
+  author,
   publisher,
   pages,
   price,
   description,
-  imgLink,
-}: ProductCardProps): ReactElement => {
+  imgUrl,
+}: Comic): ReactElement => {
   return (
     <Card maxW='sm' variant='filled'>
       <CardBody>
         <Image
-          src={imgLink}
+          minW='100%'
+          src={imgUrl}
           alt={`Opened ${name} comic book`}
           borderRadius='lg'
         />
         <Stack mt='6' spacing='3'>
-          <Heading size='md'>{title}</Heading>
+          <Heading size='md'>{name}</Heading>
           <Heading size='sm' color='teal.400'>
-            {authors}
+            {author}
           </Heading>
           <Text>
             Published by <strong>{publisher}</strong>

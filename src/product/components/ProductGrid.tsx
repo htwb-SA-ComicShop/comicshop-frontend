@@ -4,17 +4,17 @@ import { ProductGridProps } from '../types';
 
 const ProductGrid = ({ products }: ProductGridProps) => {
   return (
-    <SimpleGrid columns={3} spacing={4}>
+    <SimpleGrid columns={{ base: 1, md: 2, xl: 3 }} spacing={4}>
       {products.map(
-        ({ title, authors, publisher, pages, price, description, imgLink }) => (
+        ({ name, author, publisher, pages, price, description, imgUrl }) => (
           <ProductCard
-            title={title}
-            authors={authors}
+            name={name}
+            author={author}
             publisher={publisher}
             pages={pages}
             price={price}
             description={description}
-            imgLink={imgLink}
+            imgUrl={imgUrl}
           />
         )
       )}
