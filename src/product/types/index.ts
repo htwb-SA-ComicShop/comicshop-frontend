@@ -1,13 +1,13 @@
-export interface ProductCardProps {
-  title: string;
-  authors: string;
+export interface Comic {
+  name: string;
+  author: string;
   publisher: string;
   pages: number;
   price: number;
   description: string;
-  imgLink: string;
+  imgUrl: string;
 }
 
 export interface ProductGridProps {
-  products: ProductCardProps[];
+  products: Comic[];
 }
