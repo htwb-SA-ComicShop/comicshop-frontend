@@ -18,7 +18,7 @@ import {
 } from 'react-icons/md';
 import { DesktopNav } from './DesktopNav';
 import { MobileNav } from './MobileNav';
-import { NavItem } from '../types';
+import { NavItem } from '../../../types';
 
 export default function NavBar(): ReactElement {
   const { isOpen, onToggle } = useDisclosure();
@@ -27,19 +27,15 @@ export default function NavBar(): ReactElement {
   const NavItems: NavItem[] = [
     {
       label: 'Products',
-      href: '#',
+      href: '/',
     },
     {
       label: 'Shopping Cart',
-      href: '#',
-    },
-    {
-      label: 'Wish List',
-      href: '#',
+      href: '/',
     },
     {
       label: 'Profile',
-      href: '#',
+      href: '/',
     },
   ];
 

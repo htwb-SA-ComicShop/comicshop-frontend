@@ -1,6 +1,7 @@
-import { Flex, Link, Stack, Text } from '@chakra-ui/react';
+import { Flex, Stack, Text } from '@chakra-ui/react';
 import { ReactElement } from 'react';
-import { NavItem } from '../types';
+import { NavLink } from 'react-router-dom';
+import { NavItem } from '../../../types';
 
 export const MobileNav = ({ items }: { items: NavItem[] }): ReactElement => {
   return (
@@ -17,7 +18,13 @@ export const MobileNav = ({ items }: { items: NavItem[] }): ReactElement => {
 const MobileNavItem = ({ label, href }: NavItem): ReactElement => {
   return (
     <Stack spacing={4}>
-      <Flex py={2} as={Link} href={href} justify='space-between' align='center'>
+      <Flex
+        py={2}
+        as={NavLink}
+        to={href}
+        justify='space-between'
+        align='center'
+      >
         <Text fontWeight={600}>{label}</Text>
       </Flex>
     </Stack>
